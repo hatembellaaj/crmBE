@@ -1,0 +1,64 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="client">
+      <h2 data-cy="clientDetailsHeading"><span jhiTranslate="crmApp.crmClient.detail.title">Client</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ client.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="crmApp.crmClient.designation">Designation</span></dt>
+        <dd>
+          <span>{{ client.designation }}</span>
+        </dd>
+        <dt><span jhiTranslate="crmApp.crmClient.contact">Contact</span></dt>
+        <dd>
+          <span>{{ client.contact }}</span>
+        </dd>
+        <dt><span jhiTranslate="crmApp.crmClient.postec">Postec</span></dt>
+        <dd>
+          <span>{{ client.postec }}</span>
+        </dd>
+        <dt><span jhiTranslate="crmApp.crmClient.email">Email</span></dt>
+        <dd>
+          <span>{{ client.email }}</span>
+        </dd>
+        <dt><span jhiTranslate="crmApp.crmClient.tel">Tel</span></dt>
+        <dd>
+          <span>{{ client.tel }}</span>
+        </dd>
+        <dt><span jhiTranslate="crmApp.crmClient.adresse">Adresse</span></dt>
+        <dd>
+          <span>{{ client.adresse }}</span>
+        </dd>
+        <dt><span jhiTranslate="crmApp.crmClient.besoins">Besoins</span></dt>
+        <dd>
+          <span>{{ client.besoins }}</span>
+        </dd>
+        <dt><span jhiTranslate="crmApp.crmClient.remarques">Remarques</span></dt>
+        <dd>
+          <span>{{ client.remarques }}</span>
+        </dd>
+        <dt><span jhiTranslate="crmApp.crmClient.forum">Forum</span></dt>
+        <dd>
+          <span>{{ client.forum }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/crm/client', client.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

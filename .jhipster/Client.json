@@ -1,0 +1,51 @@
+{
+  "changelogDate": "20220616104919",
+  "clientRootFolder": "crm",
+  "databaseType": "sql",
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "designation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contact",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postec",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "besoins",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "remarques",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "forum",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "crm",
+  "name": "Client",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}
